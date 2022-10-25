@@ -1,0 +1,20 @@
+figure{
+    display: flex;
+    align-items: center;
+}
+figcaption{
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+figure i {
+    font-size: 30px;
+}
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-block: 4rem;
+    justify-content: center;
+}

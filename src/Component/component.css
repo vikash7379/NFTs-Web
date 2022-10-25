@@ -1,0 +1,104 @@
+.header{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 0px 0px;
+    letter-spacing: 10px;
+}
+
+/* Top Fold css */
+.topfold{
+    height: 92vh;
+    overflow: hidden;
+}
+.tf-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.tf-heading{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 4.3rem;
+}
+.tf-description{
+    font-size: 20px;
+    margin: 24px 0px;
+}
+.tf-left-btns{
+    margin-top: 0px;
+    display: flex;
+}
+.tf-left-secondry-btn{
+    margin-left: 30px;
+}
+.tf-left-info{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 40px;
+}
+.count{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* topfold right  */
+.tf-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* position: relative; */
+}
+
+.tf-right-diamond{
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(45deg);
+}
+
+.tf-right-diamond-item{
+    width: 120px;
+    height: 120px;
+    margin: 6px;
+    overflow: hidden;
+}
+
+.tf-right-diamond img{
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    transform: rotate(-45deg);
+}
+
+.tf-right-blob{
+    height: 350px;
+    width: 550px;
+    background-color: rgba(143,0,255,0.35);
+    filter: blur(150px);
+    position: absolute;
+    z-index: -99;
+}
+footer{
+    font-size: 20px;
+    margin-top: 4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+@media (max-width : 480px) {
+    footer{
+        font-size: 16px;
+    }
+    .header{
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+    .tf-right{
+        display: none;
+    }
+    .tf-heading{
+        font-size: 36px;
+    }
+
+}

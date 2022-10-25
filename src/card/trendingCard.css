@@ -1,0 +1,79 @@
+.trendingCard{
+    display: flex;
+    flex-direction: column;
+}
+.tc-wrapper{
+    background: var(--text-gradient-1);
+    padding: 2px;
+    border-radius: 18px;
+}
+.tc-content{
+    background-color:black;
+    border-radius: 18px;
+    padding: 18px;
+}
+.bannerImg{
+    height: 260px;
+    border-radius: 18px;
+}
+.tc-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    margin: 16px 0;
+}
+.logoImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.tc-info-left{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.tc-username{
+    font-weight: 600;
+    font-size: 13px;
+}
+.tc-userhandle{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.ethiriumImg{
+    height: 35px;
+}
+
+
+@media (max-width : 1024px) {
+    .bannerImg{
+        width: 100%;
+      }
+      .ethiriumImg{
+        height: 30px;
+      }
+}
+
+@media (max-width: 480px) {
+    .bannerImg{
+        width:70px;
+        height: 80px;
+    }
+    .logoImg{
+        display: none !important;
+    }
+    .ethiriumImg{
+        display: none !important;
+    }
+    .tc-userhandle{
+        font-size: 10px;
+        /* height: 10rem; */
+    }
+    .tc-username{
+        font-size: 10px;
+    }
+    .tc-textInfo{
+        height: 3rem;
+    }
+}
